@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAM - a text adventure game</title>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Spectral" rel="stylesheet">
+
+    <!--Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../static/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/rightroom.css"/>
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <!--Tracery library-->
+    <script src="https://cdn.rawgit.com/galaxykate/tracery/master/js/tracery.min.js"> </script>
+
+    <!--Tether-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--javascript-->
+    <script src="../js/list.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/safePuzzle.js"></script>
+    <script src="../js/computerPuzzle.js"></script>
+    <script src="../js/mainText.js"></script>
+    <script src="../js/nav.js"></script>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header-box">
+                <audio autoplay="autoplay" controls="controls">
+                    <source src="../sound/samSound.mp3" />
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div id="image">
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="main-box">
+                <div class="text-center text-justify" id="mainText"></div>
+                <div class="text-center text-justify puzzle" id="safePuzzle">
+                    <div class="row inputDisplay">
+                        <div class="col-md-3 safeInput" id="safeInput1"></div>
+                        <div class="col-md-3 safeInput" id="safeInput2"></div>
+                        <div class="col-md-3 safeInput" id="safeInput3"></div>
+                        <div class="col-md-3 safeInput" id="safeInput4"></div>
+                    </div>
+                    <div class="row safeInterface">
+                        <button class="col-md-4 safeButton" id="keypad1">
+                            1
+                        </button>
+                        <button class="col-md-4 safeButton" id="keypad2">
+                            2
+                        </button>
+                        <button class="col-md-4 safeButton" id="keypad3">
+                            3
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="col-md-4 safeButton" id="keypad4">
+                            4
+                        </button>
+                        <button class="col-md-4 safeButton" id="keypad5">
+                            5
+                        </button>
+                        <button class="col-md-4 safeButton" id="keypad6">
+                            6
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="col-md-4 safeButton" id="keypad7">
+                            7
+                        </button>
+                        <button class="col-md-4 safeButton" id="keypad8">
+                            8
+                        </button>
+                        <button class="col-md-4 safeButton" id="keypad9">
+                            9
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="offset-md-4 col-md-4 safeButton" id="keypad0">
+                            0
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="col-md-4 safeButton" id="clear">Clear</button>
+                        <button class="offset-md-4 col-md-4 safeButton" id="submitButton">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 rightBar">
+            <div class="row sideBarTopMargin">
+                <div class="col-md-12"></div>
+            </div>
+            <div class="row">
+                <div class="offset-md-6 col-md-6 list-group inventory">
+                    <a class="list-group-item list-group-item-action items" data-toggle="modal" data-target="#itemModal" data-image="../static/phonedecoder.jpg" data-name="Smartphone" id="item0">
+                        <img src="../static/phonedecoder.jpg" class="img-fluid itemImage" id="itemImage0">
+                    </a>
+                    <a class="list-group-item list-group-item-action items" data-toggle="modal" data-target="#itemModal" data-image="../static/dogbone.jpg" data-name="Bone" id="item1">
+                        <img src="../static/dogbone.jpg" class="img-fluid itemImage" id="itemImage1">
+                    </a>
+                    <a class="list-group-item list-group-item-action items" data-toggle="modal" data-target="#itemModal" data-image="../static/smallnote.jpg" data-name="Note" id="item2">
+                        <img src="../static/smallnote.jpg" class="img-fluid itemImage" id="itemImage2">
+                    </a>
+                    <a class="list-group-item list-group-item-action items" data-toggle="modal" data-target="#itemModal" data-image="../static/carkey.jpg" data-name="Key" id="item3">
+                        <img src="../static/carkey.jpg"class="img-fluid itemImage" id="itemImage3">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="footer-box">
+                <div class="offset-md-5 col-md-2">
+                    <div class="backbutton">
+                     <button id="backhome" onclick="location.href='../index.html'">Back to home</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal-->
+<div class="modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="itemModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="#" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

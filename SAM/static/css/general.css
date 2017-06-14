@@ -1,0 +1,88 @@
+.container-fluid{
+    height: 100vh;
+}
+
+div #mainText{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.main-box{
+    height: 60vh;
+}
+
+#mainText{
+    font-family: 'Spectral', serif;
+}
+
+
+.header-box{
+    height: 20vh;
+    border: 1px solid #CCC;
+    background-color: #a39fa9;
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23000000' fill-opacity='0.61' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.footer-box{
+    height: 20vh;
+    border-radius: 6px;
+    background-color: #a39fa9;
+    background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23000000' fill-opacity='0.61' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.backbutton {
+     text-align: center;
+    margin: auto;
+}
+
+#backhome {
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    color: black;
+    background-color: white;
+    width: 90px;
+    text-align: center;
+    margin: auto;
+}
+
+.safeInput{
+    height: 100px;
+    width: 100px;
+}
+
+.items img{
+    margin: auto;
+    display: block;
+    width: 71px;
+    height: 71px;
+}
+
+.sideBarTopMargin{
+    height: 10px;
+}
+
+img.illustration{
+    height: 350px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itemImage{
+    visibility: hidden;
+}
+
+a{
+    cursor: pointer;
+}

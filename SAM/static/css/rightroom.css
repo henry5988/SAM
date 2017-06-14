@@ -1,0 +1,16 @@
+.safeButton{
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    color: black;
+    background-color: white;
+}
+
+#safePuzzle{
+    visibility: hidden;
+}
+
+.safeInput{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 60pt;
+    border: 1px dashed #4CAF50;
+}

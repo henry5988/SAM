@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAM - a text adventure game</title>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
+
+    <!--Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+    <!--Tracery library-->
+    <script src="https://cdn.rawgit.com/galaxykate/tracery/master/js/tracery.min.js"> </script>
+
+    <!--Tether-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!--css files-->
+    <link rel="stylesheet" href="static/css/general.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <!--js-->
+    <script src="js/nav.js"></script>
+    <script src="js/list.js"></script>
+    <script src="js/mainText.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<!--Page body starts here-->
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header-box">
+                <!--Header Box is here-->
+            </div>
+        </div>
+    </div>
+        <div class="main-box text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="gameDescription">
+                        <h3>Controls</h3>
+                        <p>Use right-arrow, down-arrow or space key on your keyboard to progress through story.<br>
+                            Up-arrow and left-arrow to see previous sentence.<br>
+                            Mouse click to select options<br>
+                            Story text, images, and puzzles are mostly placeholders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-md-6 col-md-6">
+                <form name="startForm" action="views/startingbedroom.html" method="POST">
+                    <div class="form-group">
+                        <label for="pronoun">What is your gender pronoun?
+                            <select id="pronoun" required>
+                                <option value="" selected disabled>Your pronoun</option>
+                                <option value="he" disabled>He/Him/His</option>
+                                <option value="she">She/Her/Hers</option>
+                                <option value="they" disabled>They/Them/Their</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button name="submit" id="submit" value="Start Game" onclick="setPronoun(document.getElementById('pronoun'))">
+                                Start Game
+                            </button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="footer-box">
+                <!--Footer Box is here-->
+                <div class="backbutton">
+                    <button id="backhome" onclick="location.href='../index.html'">Back to home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

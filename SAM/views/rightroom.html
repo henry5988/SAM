@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Right Room </title>
+    <link rel="stylesheet" type="text/css" href="../static/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/rightroom.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../js/rightroom.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/index.js"></script>
+
+    <!--Bootstrap links-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!--End of Bottstrap links-->
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="header-box"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <div class="main-box">
+     
+    <div class= "paragraphe">
+	Sam is surprised that she doesn't see any flashy light in this room, in fact there is barely any light at all. The only light source in this room is a very normal floor lamp that is very clearly positioned to shine its light on a small safe in the corner of the room. This safe doesn't look any more special than any other safe Sam has seen before. However, as she inspects it more, she discovers that the safe has several wires connected on the back and leading into the wall. 
+    "Is this some sort of extra high-tech safe?" Sam thinks to herself, "I wonder what's inside." </p> <br>
+    </div>
+
+    <div class="options">
+    {Try to Open the Safe} The power of curiosity is perhaps too great for Sam to resist. "What's the worst that could happen?" Sam thinks, as she looks at the keypad on the safe to try and figure out how to unlock this mysterious box. <br>
+    {Return to Corridor} Perhaps out of guilt, or just plain laziness, Sam does not want to bother with the safe. She is proud of her well-maintained conscience- and the fact that she is able to persist with it has caused her to double down on that feeling. <br>
+    {Results of Safe Puzzle}
+    </div>
+
+    <div class="subsections">
+    {Successfully Opened Safe} <p> With enough attention to detail and will to chase the unknown, Sam successfully opens the safe. Hoping she could find a clue as to where she is or at least where is the exit to this house, Sam is yet again disappointed by the little slip that lays inside the metal safe having only a series of code that reads "25-5-12-12-15-23-9-19-11-5-25".</p>
+    <p> "What kind of code is this?'" Sam wonders to herself. "Well, it is in a safe, so it must be important." </p>
+    <p> Looking puzzled, Sam folds the slip and puts it inside her pocket. In disbelief that she's spent so much brain power to get a paper slip, Sam turns around, walking with a big sigh back towards the corridor. </p>
+    {Failed to Open Safe} <p> To her great effort, Sam is still unable to open the safe. Maybe it's time for her to move on and, instead of trying to open a safe that might not even contain anything important, she could try and find the exit to this house.</p>
+    <p> Determined with her ultimate goal, Sam walks back towards the corridor as there's nothing else here that can help her get out of this bizarre house. </p> 
+
+    <div class="buttons">
+    <button value="one" id="keypad1" class="keypad" onclick="click("keypad1")"> 1 </button>
+    <button value="two" id="keypad2" class="keypad" onclick="click("keypad2")"> 2 </button>
+    <button value="three" id="keypad3" class="keypad" onclick="click("keypad3")"> 3 </button><br>
+    <button value="four" id="keypad4" class="keypad"  onclick="click("keypad4")"> 4 </button>
+    <button value="five" id="keypad5" class="keypad" onclick="click("keypad5")"> 5 </button>
+    <button value="six" id="keypad6" class="keypad" onclick="click("keypad6")"> 6 </button>   <br>
+    <button value="seven" id="keypad7" class="keypad" onclick="click("keypad7")"> 7 </button>
+    <button value="eight" id="keypad8" class="keypad" onclick="click("keypad8")"> 8 </button>
+    <button value="nine" id="keypad9" class="keypad" onclick="click("keypad9")"> 9 </button> <br>
+    <button value="zero" id="keypad0" class="keypad" onclick="click("keypad0")"> 0 </button>
+
+        <br><br>
+    <button value="submit" id="submit" class="keypad" onclick="checkAnswer()"> Submit </button>
+    <button value="clear" id="clear" class="keypad" onclick="checkAnswer()"> Clear </button>
+    </div>
+
+    </div>
+	
+            </div>
+        </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="footer-box">
+                <div class="backbutton">
+                    <button id="backhome" onclick="location.href='../index.html'">Back to home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
